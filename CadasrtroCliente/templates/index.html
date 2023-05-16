@@ -1,0 +1,31 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css"
+    href="{% static '/css/estilos.css' %}">
+
+</head>
+<body>  
+    <!-- no django -->
+    <img src="{% static '/img/Logo_senac.jpg' %}">
+
+    <h1>{{nome}}</h1>
+    <h2>{{nome}}</h2>
+    <h3>{{nome}}</h3>
+    <h4>{{nome}}</h4>
+    <h5>{{nome}}</h5>
+    <h6 class="TextoLaranja">{{nome}}</h6>
+
+    <ul>
+        {% for fruta in frutas %}
+        <li>{{frutas}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
